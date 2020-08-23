@@ -93,6 +93,6 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
-    <File Name="main.cpp"/>
+    <File Name="cinput.cpp"/>
   </VirtualDirectory>
 </CodeLite_Project>

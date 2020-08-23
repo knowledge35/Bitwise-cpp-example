@@ -1,1 +1,1 @@
-Debug/main.cpp.o   
+Debug/cinput.cpp.o   

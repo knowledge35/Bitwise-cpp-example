@@ -62,7 +62,7 @@ AS       := "C:/Program Files (x86)/mingw-w64/i686-8.1.0-posix-dwarf-rt_v6-rev0/
 ## User defined environment variables
 ##
 CodeLiteDir:=C:\Program Files\CodeLite
-Objects0=$(IntermediateDirectory)/main.cpp$(ObjectSuffix) 
+Objects0=$(IntermediateDirectory)/cinput.cpp$(ObjectSuffix) 
 
 
 
@@ -93,11 +93,11 @@ PreBuild:
 ##
 ## Objects
 ##
-$(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
-	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/zombie/Documents/Merhaba/Merhaba/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
-$(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
-	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
+$(IntermediateDirectory)/cinput.cpp$(ObjectSuffix): cinput.cpp
+	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/cinput.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/cinput.cpp$(DependSuffix) -MM cinput.cpp
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/zombie/Documents/Merhaba/Merhaba/cinput.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/cinput.cpp$(ObjectSuffix) $(IncludePath)
+$(IntermediateDirectory)/cinput.cpp$(PreprocessSuffix): cinput.cpp
+	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/cinput.cpp$(PreprocessSuffix) cinput.cpp
 
 
 -include $(IntermediateDirectory)/*$(DependSuffix)
