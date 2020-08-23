@@ -5,7 +5,7 @@ int main()
 {
 	
 	
-	int a=10,x,z;
+	int a=10,x;
   cout<<a<<endl;
   
 	a<<=2;
@@ -14,6 +14,13 @@ int main()
   a>>=3;
   
   cout<<a<<endl;
+   x=22 & 13;
+  cout<<x<<endl;
+  int y=22^13;
+  cout<<y<<endl;
+  
+  int z=22|13;
+  cout<<z<<endl;
  getch();
     return 0;
 	
